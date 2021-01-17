@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project: Weather App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>TITLE</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <main>
+      <div id="search_container">
+        <form>
+          <div>
+            <input id="input_city" type="text" placeholder="Manila" />
+            <input id="input_country" type="text" placeholder="Philippines" />
+          </div>
+          <button id="btn_search">Search</button>
+        </form>
+      </div>
+      <h3 class="location city">City</h3>
+      <h4 class="location country">Country abbr</h4>
+      <div id="weather_container">
+        <img src="#" />
+        <strong class="weather">Weather</strong>
+      </div>
+      <div id="temp_container">
+        <div>
+          <strong class="temp">''</strong>
+          <button id="btn_switch" class="switch_temp">switch to Celsius</button>
+        </div>
+        <div class="feels">
+          <p>Feels like <strong class="feels_temp ">''</strong></p>
+          <p>Humidity <strong class="humidity">''</strong></p>
+        </div>
+      </div>
 
-<body>
+      <!-- <img src="#"> -->
+    </main>
+    <footer>Weather App</footer>
 
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>

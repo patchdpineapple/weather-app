@@ -1,2 +1,6 @@
 import {testmodule} from './test.js';
-testmodule.sample4();
+import {events} from './events.js';
+
+
+// testmodule.sample5();
+events.initialize();
