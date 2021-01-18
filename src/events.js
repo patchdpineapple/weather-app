@@ -15,10 +15,8 @@ const events = (function () {
 
     const btn_switch = document.getElementById("btn_switch");
     btn_switch.addEventListener("click", (event) => {
-      console.log("switch pressed");
-
       event.preventDefault(); //prevents page from refresh before fetching finishes
-      methods.switchTemp(event);
+      methods.switchTemp();
     });
   }
 

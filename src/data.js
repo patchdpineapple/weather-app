@@ -4,6 +4,7 @@ const data = (function() {
         city: "",
         country: "",
         weather: "",
+        sale: "",
         temp: "",
         feels: "",
         humidity: "",
