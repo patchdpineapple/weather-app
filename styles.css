@@ -5,6 +5,8 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+
+
 body {
   display: flex;
   flex-flow: column;
@@ -14,14 +16,25 @@ body {
 
 }
 
+header {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: hsl(0, 0%, 7%);
+  /* box-shadow: 0 0 10px 1px hsl(0, 0%, 0%); */
+  font-size: 12px;
+  padding: 5px;
+  width: 100vw;
+}
+
+
 main {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   background-color: hsl(242, 50%, 20%);
-  min-width: 360px;
-  min-height: 97vh;
+  min-width: 400px;
+  min-height: 100vh;
   box-shadow: 0 0 10px 1px black;
 }
 
@@ -32,7 +45,7 @@ main {
   align-items: center;
   background-color: hsl(0, 0%, 99%);
   box-shadow: 0 0 5px 2px rgb(0, 0, 0);
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   border-radius: 0 0 20px 20px;
   padding: 0 5px 5px 5px;
 }
@@ -86,7 +99,22 @@ button {
 
 button:hover {
   background-color: hsl(242, 80%, 50%);
-  
+}
+
+#error_container {
+ height: 30px;
+}
+
+.error {
+  display: none;
+  font-size: 12px;
+  color: red;
+  opacity: .8;
+  margin-bottom: 30px;
+}
+
+.display {
+  display: block;
 }
 
 .location {
@@ -113,7 +141,7 @@ h4 {
 }
 
 img {
- background-color:rgb(255, 255, 255);
+ /* background-color:rgb(255, 255, 255); */
   border: 1px solid rgba(255, 255, 255, 0.5);
   width: 80px;
   height: 80px;
@@ -167,10 +195,10 @@ p {
 }
 
 footer {
+  justify-self: flex-end;
   text-align: center;
   color: rgba(255, 255, 255, 1);
   min-width: 360px;
-  min-height: 3vh;
   background-color: hsl(0, 0%, 5%);
   box-shadow: 0 0 10px 1px hsl(0, 0%, 0%);
   font-size: 12px;

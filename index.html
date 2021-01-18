@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <header>Weather app</header>
     <main>
       <div id="search_container">
         <form>
@@ -20,6 +21,9 @@
           </div>
           <button id="btn_search">Search</button>
         </form>
+      </div>
+      <div id="error_container">
+        <p class="error">Error city not found</p>
       </div>
       <h3 class="location city">City</h3>
       <h4 class="location country">Country abbr</h4>
@@ -33,15 +37,11 @@
           <button id="btn_switch" class="switch_temp">switch to Celsius</button>
         </div>
         <div class="feels">
-          <p>Feels like <strong class="feels_temp ">''</strong></p>
+          <p>Feels like <strong class="feels_temp">''</strong></p>
           <p>Humidity <strong class="humidity">''</strong></p>
         </div>
       </div>
-
-      <!-- <img src="#"> -->
     </main>
-    <footer>Weather App</footer>
-
     <script src="./main.js"></script>
   </body>
 </html>
